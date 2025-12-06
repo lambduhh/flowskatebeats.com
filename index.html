@@ -1,76 +1,289 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
-    <meta charset="UTF-8" />
-    <title>flowskatebeats</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/simple.css" />
+    <meta charset="UTF-8">
+    <meta name="description" content="flowskate.wav :tracks">
+    <meta name="keywords" content="flowskate, flowskate.wav, flowskatebeats, dj, music, tracks">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flowskate.wav | :tracks</title>
+    <link rel="shortcut icon" href="./img/download.jpg" type="image/x-icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <body>
-<header class="site-header">
-    <h1>flowskatebeats</h1>
-    <p class="tagline">lo-fi, leftfield hip hop & experimental bass</p>
+<!-- Page Preloder -->
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<!-- Offcanvas Menu -->
+<div class="offcanvas-menu-overlay"></div>
+<div class="offcanvas-menu-wrapper">
+    <div class="offcanvas__logo">
+        <a href="#hero"><img src="img/logo.png" alt=""></a>
+    </div>
+    <div id="mobile-menu-wrap"></div>
+    <div class="offcanvas__social">
+        <a href="mailto:lorilynjmiller@gmail.com"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.instagram.com/flowskate.wav/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://soundcloud.com/flowskatebeats" target="_blank"><i class="fa fa-soundcloud"></i></a>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="header__logo">
+                    <a href="#hero"><img src="img/logo.png" alt=""></a>
+                </div>
+                <nav class="header__menu mobile-menu">
+                    <ul>
+                        <li class="active"><a href="#hero">Home</a></li>
+                        <li><a href="#tracks">:tracks</a></li>
+                        <li><a href="#booking">Booking</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+        <div class="canvas__open"><i class="fa fa-bars"></i></div>
+    </div>
 </header>
 
-<main class="content">
-    <section class="track-list">
-        <h2>Tracks</h2>
-
-        <!-- TRACK 1 -->
-        <article class="track">
-            <h3>
-                <a href="track-cream-atmosphere.html">
-                    C.R.E.A.M. x Always Coming Back Home To You
-                </a>
-            </h3>
-            <p class="track-meta">90 BPM · mashup</p>
-
-            <audio controls preload="none">
-                <source src="music-files/cream-atmosphere-mashup.mp3" type="audio/mpeg" />
-                Your browser does not support audio playback.
-            </audio>
-
-            <div class="track-actions">
-                <a class="btn" href="music-files/cream-atmosphere-mashup.mp3" download>
-                    download
-                </a>
-                <a class="btn-secondary" href="track-cream-atmosphere.html">
-                    open track page
-                </a>
+<!-- Hero -->
+<section id="hero" class="hero spad set-bg" data-setbg="img/hero/hero-bg.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="hero__text">
+                    <h5><span class="icon_calendar"></span> 10 Dec 2019</h5>
+                    <h2>flowskate.wav</h2>
+                    <a href="https://soundcloud.com/flowskatebeats" class="primary-btn" target="_blank">SoundCloud</a>
+                    <a href="https://www.instagram.com/flowskate.wav/" class="primary-btn white-btn" target="_blank">Instagram</a>
+                </div>
             </div>
-        </article>
-
-        <!-- TRACK 2 (example, duplicate + edit) -->
-        <article class="track">
-            <h3>
-                <a href="track-some-other-tune.html">
-                    Some Other Tune (example)
-                </a>
-            </h3>
-            <p class="track-meta">bpm / vibe notes</p>
-
-            <audio controls preload="none">
-                <source src="music-files/some-other-tune.mp3" type="audio/mpeg" />
-                Your browser does not support audio playback.
-            </audio>
-
-            <div class="track-actions">
-                <a class="btn" href="music-files/some-other-tune.mp3" download>
-                    download
-                </a>
-                <a class="btn-secondary" href="track-some-other-tune.html">
-                    open track page
-                </a>
+            <div class="col-lg-6">
+                <div class="hero__pic set-bg" data-setbg="img/hero/hero-video.png">
+                    <a href="https://soundcloud.com/flowskatebeats" class="play-btn"><img src="img/hero/play-btn.png" alt=""></a>
+                </div>
             </div>
-        </article>
+        </div>
+    </div>
 
-        <!-- add more <article class="track"> blocks as you add tracks -->
+    <!-- Optional single track player (keep or remove) -->
+    <div class="single__track">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="single__track__item">
+                        <div class="single__track__item__pic">
+                            <img src="img/hero/hero-track.jpg" alt="">
+                        </div>
+                        <div class="single__track__item__text">
+                            <h5>Sample Track</h5>
+                            <span>flowskate.wav</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="single__track__option">
+                        <div class="jp-jplayer jplayer" data-ancestor=".jp_container" data-url="music-files/2.mp3"></div>
+                        <div class="jp-audio jp_container">
+                            <div class="jp-gui jp-interface">
+                                <div class="player_controls_box">
+                                    <button class="jp-play player_button"></button>
+                                </div>
+                                <div class="player_bars">
+                                    <div class="jp-progress">
+                                        <div class="jp-seek-bar">
+                                            <div><div class="jp-play-bar"><div class="jp-current-time">0:00</div></div></div>
+                                        </div>
+                                    </div>
+                                    <div class="jp-duration ml-auto">00:00</div>
+                                </div>
+                                <div class="jp-volume-controls">
+                                    <button class="jp-mute"><span class="icon_volume-high"></span></button>
+                                    <div class="jp-volume-bar"><div class="jp-volume-bar-value"></div></div>
+                                </div>
+                            </div>
+                            <div class="jp-btns">
+                                <a href="#"><i class="fa fa-download"></i> Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    </section>
-</main>
+</section>
 
-<footer class="site-footer">
-    <p>© flowskatebeats · mixed by flowskate.wav</p>
+<!-- :tracks Section -->
+<section id="tracks" class="episodes spad">
+    <div class="container">
+        <div class="section-title">
+            <h2>:tracks</h2>
+            <p>Latest flowskate.wav cuts. Tap play or download.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Track 01 -->
+                <div class="podcast__item">
+                    <div class="podcast__item__text">
+                        <ul>
+                            <li><span class="icon_calendar"></span> 2025</li>
+                            <li><span class="icon_tags_alt"></span> flowskate.wav</li>
+                        </ul>
+                        <h4>Track Title 01</h4>
+                        <div class="track__option">
+                            <!-- jPlayer instance for this track -->
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container-1" data-url="music-files/track-01.mp3"></div>
+                            <div class="jp-audio jp_container-1" role="application" aria-label="media player">
+                                <div class="jp-gui jp-interface">
+                                    <!-- Player Controls -->
+                                    <div class="player_controls_box">
+                                        <button class="jp-play player_button" tabindex="0"></button>
+                                    </div>
+                                    <!-- Progress Bar -->
+                                    <div class="player_bars">
+                                        <div class="jp-progress">
+                                            <div class="jp-seek-bar">
+                                                <div>
+                                                    <div class="jp-play-bar">
+                                                        <div class="jp-current-time" role="timer" aria-label="time">0:00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
+                                    </div>
+                                    <!-- Volume Controls -->
+                                    <div class="jp-volume-controls">
+                                        <button class="jp-mute" tabindex="0">
+                                            <span class="icon_volume-high"></span>
+                                        </button>
+                                        <div class="jp-volume-bar">
+                                            <div class="jp-volume-bar-value"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jp-btns">
+                                    <a href="music-files/track-01.mp3" download>
+                                        <i class="fa fa-download"></i> Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Track 02 (copy this block and update title/data-url/etc for more tracks) -->
+                <div class="podcast__item">
+                    <div class="podcast__item__text">
+                        <ul>
+                            <li><span class="icon_calendar"></span> 2025</li>
+                            <li><span class="icon_tags_alt"></span> flowskate.wav</li>
+                        </ul>
+                        <h4>Track Title 02</h4>
+                        <div class="track__option">
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container-2" data-url="music-files/track-02.mp3"></div>
+                            <div class="jp-audio jp_container-2" role="application" aria-label="media player">
+                                <div class="jp-gui jp-interface">
+                                    <div class="player_controls_box">
+                                        <button class="jp-play player_button" tabindex="0"></button>
+                                    </div>
+                                    <div class="player_bars">
+                                        <div class="jp-progress">
+                                            <div class="jp-seek-bar">
+                                                <div>
+                                                    <div class="jp-play-bar">
+                                                        <div class="jp-current-time" role="timer" aria-label="time">0:00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
+                                    </div>
+                                    <div class="jp-volume-controls">
+                                        <button class="jp-mute" tabindex="0">
+                                            <span class="icon_volume-high"></span>
+                                        </button>
+                                        <div class="jp-volume-bar">
+                                            <div class="jp-volume-bar-value"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jp-btns">
+                                    <a href="music-files/track-02.mp3" download>
+                                        <i class="fa fa-download"></i> Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more tracks by copying a podcast__item block and:
+                     - updating h4 text (Track Title)
+                     - updating data-ancestor class (.jp_container-X)
+                     - updating data-url and download href to your audio file path -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="booking" class="footer set-bg" data-setbg="img/footer-bg.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="footer__widget">
+                    <div class="footer__logo">
+                        <a href="#hero"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <p>
+                        Booking: <a href="mailto:lorilynjmiller@gmail.com">lorilynjmiller@gmail.com</a><br>
+                        © <script>document.write(new Date().getFullYear());</script> flowskate.wav
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="footer__social">
+                    <a href="mailto:lorilynjmiller@gmail.com"><i class="fa fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/flowskate.wav/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://soundcloud.com/flowskatebeats" target="_blank"><i class="fa fa-soundcloud"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
+
+<!-- Scripts -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+
+<script src="js/jquery.jplayer.min.js"></script>
+<script src="js/jplayerInit.js"></script>
 </body>
 </html>
